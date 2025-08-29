@@ -1,4 +1,11 @@
 import { useState } from 'react'
+import Button from '@mui/material/Button';
+
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+
 import reactLogo from '../assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -19,7 +26,7 @@ function App() {
             </div>
             <h1>Vite + React</h1>
             <div className="card">
-                <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
+                <Button variant={'contained'} onClick={() => setCount((count) => count + 1)}>count is {count}</Button>
             </div>
             <div>
                 <input type="text" value={text} onChange={(e) => setText(e.target.value)} />
